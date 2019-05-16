@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Scroll Indicator</title>
+	<link rel="stylesheet" href="main.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+	<header>
+		<div class="header-proper">
+			<h1 class="logo">ScrollIndicator</h1>
+		</div>
+		<div class="scroll-line">
+
+		</div>
+	</header>
+	<div class="main">
+		<div class="content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis sodales massa, at aliquam ante porta vel. Donec tristique massa diam. Donec consequat lorem id pellentesque consectetur. Praesent tincidunt, purus in egestas vulputate, urna neque consectetur ligula, sit amet condimentum dolor sapien et erat. Etiam condimentum cursus metus, in porttitor felis viverra quis. Vestibulum tristique risus vel elit ullamcorper consequat. Vestibulum lacinia gravida pharetra. Ut ullamcorper enim sit amet lectus tincidunt iaculis. Proin eu finibus mi, ac congue magna. Fusce blandit fringilla bibendum. Pellentesque vel mauris quis est finibus mollis et et dui. Mauris id tempor elit.
+
+				Proin condimentum ultricies nibh, eget sodales enim ullamcorper sit amet. Nam pharetra dictum purus, nec dapibus ligula pretium euismod. Quisque fringilla sapien sem, bibendum egestas enim malesuada ut. Integer ut dui interdum, venenatis augue vitae, commodo nunc. Nam velit risus, pharetra eget nisl sit amet, egestas pretium nunc. In in porttitor ligula, eget congue eros. Vivamus at mollis urna, nec posuere metus. Phasellus convallis sollicitudin orci in pulvinar. Curabitur elementum velit risus, quis accumsan est finibus at. Nam diam magna, tempus sed faucibus id, consectetur ac lorem. Quisque posuere dui ante, sit amet elementum augue consectetur id. Quisque nunc massa, vehicula ut pharetra at, tincidunt ac ligula. Vivamus posuere mi in ex eleifend pulvinar.
+
+				Mauris faucibus lobortis turpis. Fusce congue sem tincidunt odio faucibus, ac viverra purus pulvinar. Pellentesque eu nibh quis dui placerat cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vehicula hendrerit commodo. Curabitur sed nisl fringilla, dapibus quam eu, scelerisque lacus. Nunc id pellentesque mi. Praesent dignissim tellus vel erat aliquet, vitae interdum nisi ullamcorper. Cras ac dui sed nunc lobortis accumsan ut at ante. Nam bibendum ligula quis arcu sodales, at malesuada dui dignissim. Nullam et urna nisi. Maecenas consectetur eleifend nisi vitae pellentesque. Mauris metus magna, vehicula eget elit ac, convallis egestas ligula. Proin ac orci posuere, eleifend leo quis, maximus massa.
+
+				Nullam sed hendrerit urna. Duis varius, felis eu malesuada tincidunt, lorem urna bibendum urna, ac commodo turpis risus et velit. Donec risus urna, convallis a libero luctus, scelerisque malesuada arcu. In hac habitasse platea dictumst. Fusce ligula velit, ornare ac scelerisque a, porttitor at erat. Mauris dapibus nisi neque, in efficitur arcu egestas et. Duis aliquet risus sed ligula bibendum, ut interdum dui finibus. Donec id ipsum vel lectus vulputate porttitor vel non odio. Donec vel sodales magna. Cras sed vestibulum dui. Morbi interdum, erat vel ultricies imperdiet, turpis enim fermentum augue, id accumsan enim metus et neque. Ut tempor malesuada dolor, eget ultrices tortor lacinia id. Praesent rutrum hendrerit risus non vehicula. In blandit non dolor eu volutpat. Praesent aliquet dapibus ipsum sed vestibulum. Pellentesque ornare, metus in interdum tincidunt, ante lorem vestibulum est, ultricies varius sem eros egestas diam.
+
+			Vivamus consectetur ultrices ligula eu venenatis. Curabitur ullamcorper diam urna, ac tempor augue cursus sed. Suspendisse bibendum efficitur quam non tempus. Nulla lorem nisl, fermentum dignissim interdum ut, blandit sit amet magna. Suspendisse eleifend viverra leo, sed laoreet turpis pulvinar ac. Morbi nunc enim, efficitur feugiat lacinia a, finibus sed sapien. Phasellus eu tortor sed diam tempor cursus. Nulla facilisi. Ut non mi ac sem luctus aliquam quis at neque.</p>
+		</div>
+	</div>
+	<script type="text/javascript">
+    $(window).scroll(function() {
+     var wintop = $(window).scrollTop(), docheight =
+
+     $(document).height(), winheight = $(window).height();
+     var scrolled = (wintop/(docheight-winheight))*100;
+
+     $('.scroll-line').css('width', (scrolled + '%'));
+});
+	</script>
+</body>
+</html>
